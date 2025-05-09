@@ -5,7 +5,7 @@ It implements forward-mode automatic differentiation recursively using a metapro
 
 You can use it as follows:
 
-<pre><code>```cpp 
+```cpp
 #include "AutomaticDifferentiation.hpp"
 AD_single<10> x(2.3);
 AD_single<10> f = x*x - 2.0*x + cos(x);
@@ -21,4 +21,4 @@ std::cout << f(7) << std::endl; // 7th order derivative
 std::cout << f(8) << std::endl; // 8th order derivative
 std::cout << f(9) << std::endl; // 9th order derivative
 std::cout << f(10) << std::endl; // 10th order derivative
-```</code></pre>
+```
